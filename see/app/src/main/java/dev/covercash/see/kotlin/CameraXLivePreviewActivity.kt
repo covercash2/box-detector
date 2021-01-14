@@ -28,11 +28,7 @@ import android.widget.*
 import android.widget.AdapterView.OnItemSelectedListener
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import androidx.camera.core.CameraInfoUnavailableException
-import androidx.camera.core.CameraSelector
-import androidx.camera.core.ImageAnalysis
-import androidx.camera.core.ImageProxy
-import androidx.camera.core.Preview
+import androidx.camera.core.*
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.view.PreviewView
 import androidx.core.app.ActivityCompat
@@ -42,11 +38,9 @@ import androidx.lifecycle.ViewModelProvider
 import com.google.android.gms.common.annotation.KeepName
 import com.google.mlkit.common.MlKitException
 import com.google.mlkit.common.model.LocalModel
-import com.google.mlkit.vision.label.custom.CustomImageLabelerOptions
-import com.google.mlkit.vision.label.defaults.ImageLabelerOptions
-import dev.covercash.see.R
 import dev.covercash.see.CameraXViewModel
 import dev.covercash.see.GraphicOverlay
+import dev.covercash.see.R
 import dev.covercash.see.VisionImageProcessor
 import dev.covercash.see.kotlin.objectdetector.ObjectDetectorProcessor
 import dev.covercash.see.preference.PreferenceUtils
@@ -110,17 +104,11 @@ class CameraXLivePreviewActivity :
             Log.d(TAG, "graphicOverlay is null")
         }
         val spinner = findViewById<Spinner>(R.id.spinner)
-        val options: MutableList<String> = ArrayList()
-        options.add(OBJECT_DETECTION)
-        options.add(OBJECT_DETECTION_CUSTOM)
-        options.add(CUSTOM_AUTOML_OBJECT_DETECTION)
-        options.add(FACE_DETECTION)
-        options.add(TEXT_RECOGNITION)
-        options.add(BARCODE_SCANNING)
-        options.add(IMAGE_LABELING)
-        options.add(IMAGE_LABELING_CUSTOM)
-        options.add(CUSTOM_AUTOML_LABELING)
-        options.add(POSE_DETECTION)
+        val options = listOf(
+                OBJECT_DETECTION,
+                OBJECT_DETECTION_CUSTOM,
+                CUSTOM_AUTOML_OBJECT_DETECTION,
+        )
 
         // Creating adapter for spinner
         val dataAdapter =
@@ -259,7 +247,7 @@ class CameraXLivePreviewActivity :
             builder.setTargetResolution(targetResolution)
         }
         previewUseCase = builder.build()
-        previewUseCase!!.setSurfaceProvider(previewView!!.getSurfaceProvider())
+        previewUseCase!!.setSurfaceProvider(previewView!!.surfaceProvider)
         cameraProvider!!.bindToLifecycle(/* lifecycleOwner= */this, cameraSelector!!, previewUseCase)
     }
 
