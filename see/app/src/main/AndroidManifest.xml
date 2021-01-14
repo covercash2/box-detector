@@ -44,12 +44,6 @@
         </activity>
 
         <activity
-            android:name="dev.covercash.see.kotlin.LivePreviewActivity"
-            android:exported="true"
-            android:theme="@style/AppTheme">
-        </activity>
-
-        <activity
             android:name="dev.covercash.see.kotlin.CameraXLivePreviewActivity"
             android:exported="true"
             android:theme="@style/AppTheme">

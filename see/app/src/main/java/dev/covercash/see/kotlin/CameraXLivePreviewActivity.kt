@@ -48,12 +48,7 @@ import dev.covercash.see.R
 import dev.covercash.see.CameraXViewModel
 import dev.covercash.see.GraphicOverlay
 import dev.covercash.see.VisionImageProcessor
-import dev.covercash.see.kotlin.barcodescanner.BarcodeScannerProcessor
-import dev.covercash.see.kotlin.facedetector.FaceDetectorProcessor
-import dev.covercash.see.kotlin.labeldetector.LabelDetectorProcessor
 import dev.covercash.see.kotlin.objectdetector.ObjectDetectorProcessor
-import dev.covercash.see.kotlin.posedetector.PoseDetectorProcessor
-import dev.covercash.see.kotlin.textdetector.TextRecognitionProcessor
 import dev.covercash.see.preference.PreferenceUtils
 import dev.covercash.see.preference.SettingsActivity
 import dev.covercash.see.preference.SettingsActivity.LaunchSource
@@ -147,10 +142,10 @@ class CameraXLivePreviewActivity :
                 .observe(
                         this,
                         Observer { provider: ProcessCameraProvider? ->
-                          cameraProvider = provider
-                          if (allPermissionsGranted()) {
-                            bindAllCameraUseCases()
-                          }
+                            cameraProvider = provider
+                            if (allPermissionsGranted()) {
+                                bindAllCameraUseCases()
+                            }
                         }
                 )
 
@@ -280,114 +275,45 @@ class CameraXLivePreviewActivity :
         }
         imageProcessor = try {
             when (selectedModel) {
-              OBJECT_DETECTION -> {
-                Log.i(
-                        TAG,
-                        "Using Object Detector Processor"
-                )
-                val objectDetectorOptions =
-                        PreferenceUtils.getObjectDetectorOptionsForLivePreview(this)
-                ObjectDetectorProcessor(
-                        this, objectDetectorOptions
-                )
-              }
-              OBJECT_DETECTION_CUSTOM -> {
-                Log.i(
-                        TAG,
-                        "Using Custom Object Detector (Bird) Processor"
-                )
-                val localModel = LocalModel.Builder()
-                        .setAssetFilePath("custom_models/bird_classifier.tflite")
-                        .build()
-                val customObjectDetectorOptions =
-                        PreferenceUtils.getCustomObjectDetectorOptionsForLivePreview(this, localModel)
-                ObjectDetectorProcessor(
-                        this, customObjectDetectorOptions
-                )
-              }
-              CUSTOM_AUTOML_OBJECT_DETECTION -> {
-                Log.i(
-                        TAG,
-                        "Using Custom AutoML Object Detector Processor"
-                )
-                val customAutoMLODTLocalModel = LocalModel.Builder()
-                        .setAssetManifestFilePath("automl/manifest.json")
-                        .build()
-                val customAutoMLODTOptions = PreferenceUtils
-                        .getCustomObjectDetectorOptionsForLivePreview(this, customAutoMLODTLocalModel)
-                ObjectDetectorProcessor(
-                        this, customAutoMLODTOptions
-                )
-              }
-              TEXT_RECOGNITION -> {
-                Log.i(
-                        TAG,
-                        "Using on-device Text recognition Processor"
-                )
-                TextRecognitionProcessor(this)
-              }
-              FACE_DETECTION -> {
-                Log.i(
-                        TAG,
-                        "Using Face Detector Processor"
-                )
-                val faceDetectorOptions =
-                        PreferenceUtils.getFaceDetectorOptionsForLivePreview(this)
-                FaceDetectorProcessor(this, faceDetectorOptions)
-              }
-              BARCODE_SCANNING -> {
-                Log.i(
-                        TAG,
-                        "Using Barcode Detector Processor"
-                )
-                BarcodeScannerProcessor(this)
-              }
-              IMAGE_LABELING -> {
-                Log.i(
-                        TAG,
-                        "Using Image Label Detector Processor"
-                )
-                LabelDetectorProcessor(
-                        this, ImageLabelerOptions.DEFAULT_OPTIONS
-                )
-              }
-              IMAGE_LABELING_CUSTOM -> {
-                Log.i(
-                        TAG,
-                        "Using Custom Image Label (Bird) Detector Processor"
-                )
-                val localClassifier = LocalModel.Builder()
-                        .setAssetFilePath("custom_models/bird_classifier.tflite")
-                        .build()
-                val customImageLabelerOptions =
-                        CustomImageLabelerOptions.Builder(localClassifier).build()
-                LabelDetectorProcessor(
-                        this, customImageLabelerOptions
-                )
-              }
-              CUSTOM_AUTOML_LABELING -> {
-                Log.i(
-                        TAG,
-                        "Using Custom AutoML Image Label Detector Processor"
-                )
-                val customAutoMLLabelLocalModel = LocalModel.Builder()
-                        .setAssetManifestFilePath("automl/manifest.json")
-                        .build()
-                val customAutoMLLabelOptions = CustomImageLabelerOptions
-                        .Builder(customAutoMLLabelLocalModel)
-                        .setConfidenceThreshold(0f)
-                        .build()
-                LabelDetectorProcessor(
-                        this, customAutoMLLabelOptions
-                )
-              }
-              POSE_DETECTION -> {
-                val poseDetectorOptions =
-                        PreferenceUtils.getPoseDetectorOptionsForLivePreview(this)
-                val shouldShowInFrameLikelihood =
-                        PreferenceUtils.shouldShowPoseDetectionInFrameLikelihoodLivePreview(this)
-                PoseDetectorProcessor(this, poseDetectorOptions, shouldShowInFrameLikelihood)
-              }
+                OBJECT_DETECTION -> {
+                    Log.i(
+                            TAG,
+                            "Using Object Detector Processor"
+                    )
+                    val objectDetectorOptions =
+                            PreferenceUtils.getObjectDetectorOptionsForLivePreview(this)
+                    ObjectDetectorProcessor(
+                            this, objectDetectorOptions
+                    )
+                }
+                OBJECT_DETECTION_CUSTOM -> {
+                    Log.i(
+                            TAG,
+                            "Using Custom Object Detector (Bird) Processor"
+                    )
+                    val localModel = LocalModel.Builder()
+                            .setAssetFilePath("custom_models/bird_classifier.tflite")
+                            .build()
+                    val customObjectDetectorOptions =
+                            PreferenceUtils.getCustomObjectDetectorOptionsForLivePreview(this, localModel)
+                    ObjectDetectorProcessor(
+                            this, customObjectDetectorOptions
+                    )
+                }
+                CUSTOM_AUTOML_OBJECT_DETECTION -> {
+                    Log.i(
+                            TAG,
+                            "Using Custom AutoML Object Detector Processor"
+                    )
+                    val customAutoMLODTLocalModel = LocalModel.Builder()
+                            .setAssetManifestFilePath("automl/manifest.json")
+                            .build()
+                    val customAutoMLODTOptions = PreferenceUtils
+                            .getCustomObjectDetectorOptionsForLivePreview(this, customAutoMLODTLocalModel)
+                    ObjectDetectorProcessor(
+                            this, customAutoMLODTOptions
+                    )
+                }
                 else -> throw IllegalStateException("Invalid model name")
             }
         } catch (e: Exception) {
@@ -419,36 +345,36 @@ class CameraXLivePreviewActivity :
                 // thus we can just runs the analyzer itself on main thread.
                 ContextCompat.getMainExecutor(this),
                 ImageAnalysis.Analyzer { imageProxy: ImageProxy ->
-                  if (needUpdateGraphicOverlayImageSourceInfo) {
-                    val isImageFlipped =
-                            lensFacing == CameraSelector.LENS_FACING_FRONT
-                    val rotationDegrees =
-                            imageProxy.imageInfo.rotationDegrees
-                    if (rotationDegrees == 0 || rotationDegrees == 180) {
-                      graphicOverlay!!.setImageSourceInfo(
-                              imageProxy.width, imageProxy.height, isImageFlipped
-                      )
-                    } else {
-                      graphicOverlay!!.setImageSourceInfo(
-                              imageProxy.height, imageProxy.width, isImageFlipped
-                      )
+                    if (needUpdateGraphicOverlayImageSourceInfo) {
+                        val isImageFlipped =
+                                lensFacing == CameraSelector.LENS_FACING_FRONT
+                        val rotationDegrees =
+                                imageProxy.imageInfo.rotationDegrees
+                        if (rotationDegrees == 0 || rotationDegrees == 180) {
+                            graphicOverlay!!.setImageSourceInfo(
+                                    imageProxy.width, imageProxy.height, isImageFlipped
+                            )
+                        } else {
+                            graphicOverlay!!.setImageSourceInfo(
+                                    imageProxy.height, imageProxy.width, isImageFlipped
+                            )
+                        }
+                        needUpdateGraphicOverlayImageSourceInfo = false
                     }
-                    needUpdateGraphicOverlayImageSourceInfo = false
-                  }
-                  try {
-                    imageProcessor!!.processImageProxy(imageProxy, graphicOverlay)
-                  } catch (e: MlKitException) {
-                    Log.e(
-                            TAG,
-                            "Failed to process image. Error: " + e.localizedMessage
-                    )
-                    Toast.makeText(
-                            applicationContext,
-                            e.localizedMessage,
-                            Toast.LENGTH_SHORT
-                    )
-                            .show()
-                  }
+                    try {
+                        imageProcessor!!.processImageProxy(imageProxy, graphicOverlay)
+                    } catch (e: MlKitException) {
+                        Log.e(
+                                TAG,
+                                "Failed to process image. Error: " + e.localizedMessage
+                        )
+                        Toast.makeText(
+                                applicationContext,
+                                e.localizedMessage,
+                                Toast.LENGTH_SHORT
+                        )
+                                .show()
+                    }
                 }
         )
         cameraProvider!!.bindToLifecycle( /* lifecycleOwner= */this, cameraSelector!!, analysisUseCase)
