@@ -1,0 +1,65 @@
+item {
+    id: 1
+    display_name: "Cinnamon Toast Crunch"
+}
+
+item {
+    id: 2
+    display_name: "Froot Loops"
+}
+
+item {
+    id: 3
+    display_name: "Golden Grahams"
+}
+
+item {
+    id: 4
+    display_name: "Great Value Cinnamon Crunch"
+}
+
+item {
+    id: 5
+    display_name: "Great Value Frosted Flakes"
+}
+
+item {
+    id: 6
+    display_name: "Honey Comb"
+}
+
+item {
+    id: 7
+    display_name: "Honey Smacks"
+}
+
+item {
+    id: 8
+    display_name: "Kellogs Frosted Flakes"
+}
+
+item {
+    id: 9
+    display_name: "Kix"
+}
+
+item {
+    id: 10
+    display_name: "Lucky Charms"
+}
+
+item {
+    id: 11
+    display_name: "Magic Treasures"
+}
+
+item {
+    id: 12
+    display_name: "Pops"
+}
+
+item {
+    id: 13
+    display_name: "Trix"
+}
+
