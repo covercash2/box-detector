@@ -1,0 +1,134 @@
+<annotation>
+	<folder>data</folder>
+	<filename>IMG_20210113_134156610_HDR.jpg</filename>
+	<path>/home/chrash/docs/work/homework/box-detector/data/IMG_20210113_134156610_HDR.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>3472</width>
+		<height>4640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Great Value Frosted Flakes</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>152</xmin>
+			<ymin>505</ymin>
+			<xmax>1019</xmax>
+			<ymax>1652</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Great Value Frosted Flakes</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>299</xmin>
+			<ymin>2071</ymin>
+			<xmax>961</xmax>
+			<ymax>3033</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Cinnamon Toast Crunch</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>895</xmin>
+			<ymin>1933</ymin>
+			<xmax>1709</xmax>
+			<ymax>2986</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Cinnamon Toast Crunch</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1538</xmin>
+			<ymin>1943</ymin>
+			<xmax>2347</xmax>
+			<ymax>2914</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Cinnamon Toast Crunch</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1261</xmin>
+			<ymin>3448</ymin>
+			<xmax>2242</xmax>
+			<ymax>4633</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Cinnamon Toast Crunch</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2133</xmin>
+			<ymin>3390</ymin>
+			<xmax>3133</xmax>
+			<ymax>4600</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Great Value Cinnamon Crunch</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2223</xmin>
+			<ymin>1757</ymin>
+			<xmax>3023</xmax>
+			<ymax>2848</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Cinnamon Toast Crunch</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>919</xmin>
+			<ymin>514</ymin>
+			<xmax>1842</xmax>
+			<ymax>1619</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Cinnamon Toast Crunch</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1752</xmin>
+			<ymin>471</ymin>
+			<xmax>2623</xmax>
+			<ymax>1548</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Cinnamon Toast Crunch</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2504</xmin>
+			<ymin>438</ymin>
+			<xmax>3347</xmax>
+			<ymax>1510</ymax>
+		</bndbox>
+	</object>
+</annotation>

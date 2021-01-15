@@ -1,0 +1,26 @@
+<annotation>
+	<folder>data</folder>
+	<filename>IMG_20210113_134248691_HDR.jpg</filename>
+	<path>/home/chrash/docs/work/homework/box-detector/data/IMG_20210113_134248691_HDR.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>3472</width>
+		<height>4640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Lucky Charms</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1590</xmin>
+			<ymin>1152</ymin>
+			<xmax>3095</xmax>
+			<ymax>3048</ymax>
+		</bndbox>
+	</object>
+</annotation>

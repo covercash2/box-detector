@@ -1,0 +1,38 @@
+<annotation>
+	<folder>data</folder>
+	<filename>IMG_20210113_134247292_HDR.jpg</filename>
+	<path>/home/chrash/docs/work/homework/box-detector/data/IMG_20210113_134247292_HDR.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>3472</width>
+		<height>4640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Great Value Cinnamon Crunch</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>1176</ymin>
+			<xmax>1271</xmax>
+			<ymax>3233</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Cinnamon Toast Crunch</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1080</xmin>
+			<ymin>1071</ymin>
+			<xmax>2842</xmax>
+			<ymax>3057</ymax>
+		</bndbox>
+	</object>
+</annotation>

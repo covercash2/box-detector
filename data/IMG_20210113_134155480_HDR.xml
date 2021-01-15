@@ -1,0 +1,110 @@
+<annotation>
+	<folder>data</folder>
+	<filename>IMG_20210113_134155480_HDR.jpg</filename>
+	<path>/home/chrash/docs/work/homework/box-detector/data/IMG_20210113_134155480_HDR.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>3472</width>
+		<height>4640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Great Value Frosted Flakes</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1133</xmin>
+			<ymin>467</ymin>
+			<xmax>1999</xmax>
+			<ymax>1571</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Great Value Frosted Flakes</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>633</xmin>
+			<ymin>2067</ymin>
+			<xmax>1333</xmax>
+			<ymax>3014</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Great Value Frosted Flakes</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1247</xmin>
+			<ymin>1990</ymin>
+			<xmax>1971</xmax>
+			<ymax>2962</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Cinnamon Toast Crunch</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1890</xmin>
+			<ymin>486</ymin>
+			<xmax>2761</xmax>
+			<ymax>1543</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Cinnamon Toast Crunch</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1871</xmin>
+			<ymin>1871</ymin>
+			<xmax>2714</xmax>
+			<ymax>2900</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Cinnamon Toast Crunch</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2542</xmin>
+			<ymin>1814</ymin>
+			<xmax>3314</xmax>
+			<ymax>2824</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Cinnamon Toast Crunch</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2276</xmin>
+			<ymin>3314</ymin>
+			<xmax>3266</xmax>
+			<ymax>4438</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Kellogs Frosted Flakes</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>814</xmin>
+			<ymin>3219</ymin>
+			<xmax>1704</xmax>
+			<ymax>4490</ymax>
+		</bndbox>
+	</object>
+</annotation>
