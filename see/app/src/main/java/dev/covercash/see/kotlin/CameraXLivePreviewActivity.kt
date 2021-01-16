@@ -64,7 +64,7 @@ class CameraXLivePreviewActivity :
     private var analysisUseCase: ImageAnalysis? = null
     private var imageProcessor: VisionImageProcessor? = null
     private var needUpdateGraphicOverlayImageSourceInfo = false
-    private var selectedModel = OBJECT_DETECTION
+    private var selectedModel = OBJECT_DETECTION_CUSTOM
     private var lensFacing = CameraSelector.LENS_FACING_BACK
     private var cameraSelector: CameraSelector? = null
 
@@ -85,7 +85,7 @@ class CameraXLivePreviewActivity :
             selectedModel =
                     savedInstanceState.getString(
                             STATE_SELECTED_MODEL,
-                            OBJECT_DETECTION
+                            OBJECT_DETECTION_CUSTOM
                     )
             lensFacing =
                     savedInstanceState.getInt(
@@ -105,8 +105,8 @@ class CameraXLivePreviewActivity :
         }
         val spinner = findViewById<Spinner>(R.id.spinner)
         val options = listOf(
-                OBJECT_DETECTION,
                 OBJECT_DETECTION_CUSTOM,
+                OBJECT_DETECTION,
                 CUSTOM_AUTOML_OBJECT_DETECTION,
         )
 
