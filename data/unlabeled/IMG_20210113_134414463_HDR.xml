@@ -1,0 +1,98 @@
+<annotation>
+	<folder>unlabeled</folder>
+	<filename>IMG_20210113_134414463_HDR.jpg</filename>
+	<path>/home/chrash/docs/work/homework/box-detector/data/unlabeled/IMG_20210113_134414463_HDR.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>3472</width>
+		<height>4640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Froot Loops</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>480</xmin>
+			<ymin>562</ymin>
+			<xmax>1390</xmax>
+			<ymax>1638</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Froot Loops</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1338</xmin>
+			<ymin>714</ymin>
+			<xmax>2142</xmax>
+			<ymax>1595</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Lucky Charms</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>476</xmin>
+			<ymin>1771</ymin>
+			<xmax>1461</xmax>
+			<ymax>3033</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Lucky Charms</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1366</xmin>
+			<ymin>1819</ymin>
+			<xmax>2238</xmax>
+			<ymax>2938</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Lucky Charms</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>904</xmin>
+			<ymin>3433</ymin>
+			<xmax>1757</xmax>
+			<ymax>4595</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Lucky Charms</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1595</xmin>
+			<ymin>3281</ymin>
+			<xmax>2395</xmax>
+			<ymax>4319</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Lucky Charms</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>3519</ymin>
+			<xmax>861</xmax>
+			<ymax>4640</ymax>
+		</bndbox>
+	</object>
+</annotation>

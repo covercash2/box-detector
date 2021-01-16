@@ -1,0 +1,38 @@
+<annotation>
+	<folder>unlabeled</folder>
+	<filename>IMG_20210113_134422640_HDR.jpg</filename>
+	<path>/home/chrash/docs/work/homework/box-detector/data/unlabeled/IMG_20210113_134422640_HDR.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>3472</width>
+		<height>4640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Froot Loops</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>223</xmin>
+			<ymin>814</ymin>
+			<xmax>1023</xmax>
+			<ymax>1805</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Froot Loops</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1028</xmin>
+			<ymin>957</ymin>
+			<xmax>1723</xmax>
+			<ymax>1743</ymax>
+		</bndbox>
+	</object>
+</annotation>
