@@ -43,7 +43,6 @@ import dev.covercash.see.GraphicOverlay
 import dev.covercash.see.R
 import dev.covercash.see.VisionImageProcessor
 import dev.covercash.see.kotlin.objectdetector.ObjectDetectorProcessor
-import dev.covercash.see.ml.CerealModel
 import dev.covercash.see.preference.PreferenceUtils
 import dev.covercash.see.preference.SettingsActivity
 import dev.covercash.see.preference.SettingsActivity.LaunchSource
