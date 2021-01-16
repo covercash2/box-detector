@@ -129,7 +129,7 @@ class CameraSourcePreview(context: Context, attrs: AttributeSet?) : ViewGroup(co
         if (previewAspectRatio > layoutAspectRatio) {
             // The preview input is wider than the layout area. Fit the layout height and crop
             // the preview input horizontally while keep the center.
-            val horizontalOffset = (previewAspectRatio * layoutHeight - layoutWidth) as Int / 2
+            val horizontalOffset = ((previewAspectRatio * layoutHeight - layoutWidth) / 2).toInt()
             surfaceView.layout(-horizontalOffset, 0, layoutWidth + horizontalOffset, layoutHeight)
         } else {
             // The preview input is taller than the layout area. Fit the layout width and crop the preview

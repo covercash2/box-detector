@@ -35,4 +35,52 @@
 			<ymax>1743</ymax>
 		</bndbox>
 	</object>
+	<object>
+		<name>Lucky Charms</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>209</xmin>
+			<ymin>1910</ymin>
+			<xmax>1071</xmax>
+			<ymax>3043</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Lucky Charms</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1019</xmin>
+			<ymin>1952</ymin>
+			<xmax>1776</xmax>
+			<ymax>2948</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Lucky Charms</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>585</xmin>
+			<ymin>3395</ymin>
+			<xmax>1309</xmax>
+			<ymax>4414</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Lucky Charms</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1228</xmin>
+			<ymin>3286</ymin>
+			<xmax>1980</xmax>
+			<ymax>4190</ymax>
+		</bndbox>
+	</object>
 </annotation>

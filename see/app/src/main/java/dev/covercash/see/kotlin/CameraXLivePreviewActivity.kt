@@ -43,6 +43,7 @@ import dev.covercash.see.GraphicOverlay
 import dev.covercash.see.R
 import dev.covercash.see.VisionImageProcessor
 import dev.covercash.see.kotlin.objectdetector.ObjectDetectorProcessor
+import dev.covercash.see.ml.CerealModel
 import dev.covercash.see.preference.PreferenceUtils
 import dev.covercash.see.preference.SettingsActivity
 import dev.covercash.see.preference.SettingsActivity.LaunchSource
@@ -277,10 +278,11 @@ class CameraXLivePreviewActivity :
                 OBJECT_DETECTION_CUSTOM -> {
                     Log.i(
                             TAG,
-                            "Using Custom Object Detector (Bird) Processor"
+                            "Using Custom Object Detector (Cereal Boxes) Processor"
                     )
+                    //val cerealModel = CerealModel.newInstance(applicationContext)
                     val localModel = LocalModel.Builder()
-                            .setAssetFilePath("custom_models/bird_classifier.tflite")
+                            .setAssetFilePath("custom_models/cereal_model.tflite")
                             .build()
                     val customObjectDetectorOptions =
                             PreferenceUtils.getCustomObjectDetectorOptionsForLivePreview(this, localModel)
@@ -424,7 +426,7 @@ class CameraXLivePreviewActivity :
         private const val TAG = "CameraXLivePreview"
         private const val PERMISSION_REQUESTS = 1
         private const val OBJECT_DETECTION = "Object Detection"
-        private const val OBJECT_DETECTION_CUSTOM = "Custom Object Detection (Bird)"
+        private const val OBJECT_DETECTION_CUSTOM = "Custom Object Detection (Cereal Boxes)"
         private const val CUSTOM_AUTOML_OBJECT_DETECTION = "Custom AutoML Object Detection (Flower)"
         private const val FACE_DETECTION = "Face Detection"
         private const val TEXT_RECOGNITION = "Text Recognition"
